@@ -329,7 +329,7 @@
    *   SimpleDB (https://gist.github.com/inexorabletash/c8069c042b734519680c)
    ************************************************************************/
    app.selectedCities = localStorage.selectedCities;
-   if (aoo.selectedCities) {
+   if (app.selectedCities) {
     app.selectedCities = JSON.parse(app.selectedCities);
     app.selectedCities.forEach(function(city) {
       app.getForecast(city.key, city.label);
